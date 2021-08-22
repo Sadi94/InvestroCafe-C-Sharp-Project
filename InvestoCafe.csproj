@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DF1AE373-E743-4D05-B72C-45CD0BBE2827}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project_Login</RootNamespace>
+    <AssemblyName>Project_Login</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add_Proposal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Proposal.Designer.cs">
+      <DependentUpon>Add_Proposal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Details.Designer.cs">
+      <DependentUpon>Admin_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllProposal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllProposal.Designer.cs">
+      <DependentUpon>AllProposal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="COD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COD.Designer.cs">
+      <DependentUpon>COD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CODInvest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CODInvest.Designer.cs">
+      <DependentUpon>CODInvest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eBookInvest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eBookInvest.Designer.cs">
+      <DependentUpon>eBookInvest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entrepreneur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entrepreneur.Designer.cs">
+      <DependentUpon>Entrepreneur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entreprenur_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entreprenur_Details.Designer.cs">
+      <DependentUpon>Entreprenur_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eBook.Designer.cs">
+      <DependentUpon>eBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FIFA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FIFA.Designer.cs">
+      <DependentUpon>FIFA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FifaInvest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FifaInvest.Designer.cs">
+      <DependentUpon>FifaInvest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutUs.Designer.cs">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntroPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntroPage.Designer.cs">
+      <DependentUpon>IntroPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Investement_history.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Investement_history.Designer.cs">
+      <DependentUpon>Investement_history.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvestmentProposal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvestmentProposal.Designer.cs">
+      <DependentUpon>InvestmentProposal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Investor_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Investor_Details.Designer.cs">
+      <DependentUpon>Investor_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Investor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Investor.Designer.cs">
+      <DependentUpon>Investor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentForm.Designer.cs">
+      <DependentUpon>PaymentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrationPage.Designer.cs">
+      <DependentUpon>RegistrationPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutUs.resx">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Proposal.resx">
+      <DependentUpon>Add_Proposal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Details.resx">
+      <DependentUpon>Admin_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllProposal.resx">
+      <DependentUpon>AllProposal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COD.resx">
+      <DependentUpon>COD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CODInvest.resx">
+      <DependentUpon>CODInvest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eBookInvest.resx">
+      <DependentUpon>eBookInvest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entrepreneur.resx">
+      <DependentUpon>Entrepreneur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entreprenur_Details.resx">
+      <DependentUpon>Entreprenur_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eBook.resx">
+      <DependentUpon>eBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FIFA.resx">
+      <DependentUpon>FIFA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FifaInvest.resx">
+      <DependentUpon>FifaInvest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntroPage.resx">
+      <DependentUpon>IntroPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Investement_history.resx">
+      <DependentUpon>Investement_history.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvestmentProposal.resx">
+      <DependentUpon>InvestmentProposal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Investor.resx">
+      <DependentUpon>Investor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Investor_Details.resx">
+      <DependentUpon>Investor_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentForm.resx">
+      <DependentUpon>PaymentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrationPage.resx">
+      <DependentUpon>RegistrationPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MicrosoftTeams-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\defaultImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photoframe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photoframe1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photoframe2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\default-image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CODback.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ebook.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eBookn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fifa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CODInvest.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AllProposal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EbOOKiNVEST.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FifaInvestor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\investementProp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addProposal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addProposal1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ebookback.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\entreprenurDeta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\entreprenurBack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\investorHis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\investor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InvestPage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\startinvest.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aboutUs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sir1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tanim.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\me.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shariful.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
